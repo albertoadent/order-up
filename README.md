@@ -780,7 +780,7 @@ Now it's time to _get_ data from the database and put data back _into_ the
 database. That will be awesome. A couple of things before you dive in:
 
 * Don't forget about the `/static` route provided by Flask.
-* Don't be afraid to try new things.
+* Don't be afraid to try new things. (no ty)
 
 You have a choice, here. Get things working, or shoot for the moon.
 
