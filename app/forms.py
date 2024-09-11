@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
+from wtforms import StringField, PasswordField, SubmitField, SelectField
 from wtforms.validators import DataRequired
 
 
@@ -9,3 +9,8 @@ class LoginForm(FlaskForm):
     )
     password = PasswordField("Password", validators=[DataRequired("Password plz")])
     submit = SubmitField("Login")
+
+class TableAssignmentForm(FlaskForm):
+    tables = SelectField("Tables", coerce=int)
+    servers = SelectField("Servers", coerce=int)
+    assign = SubmitField("Assign")
